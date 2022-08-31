@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  modern-instrumentations:
+    container_name: modern-instrumentations-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'
+    image: modern-instrumentations-image
+    # env_file:
+    #   - ./.env.local
+    # environment:
+    #   - NX_API_URL=hkuhjkj/
+    
